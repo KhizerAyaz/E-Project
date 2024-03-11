@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&family=Bebas+Neue&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+    
+  <title>Ryan Sport Club</title>
+  
+  <style>
+        /* Navbar CSS Start  */
+      #Logo{
+        height: 50px;
+        width: 50px;
+      }
+      .container-fluid{
+        background-color:black ;
+        color: whitesmoke;
+      }
+      .a-item{
+        color: whitesmoke;
+        background-color: black;
+      }
+      .a-item:hover{
+        color: black;
+        background-color: whitesmoke;
+        transition: 1.5s;
+      }
+      .dropdown-menu,.dropdown-item{
+        background-color: black;
+        color: whitesmoke;
+      }
+      .dropdown-item:hover{
+        background-color: whitesmoke;
+        color: black;
+        transition: 1.5s;
+      }
+      .Nav-btn{
+        background-color: black;
+      }
+      .Nav-btn:hover{
+        background-color: whitesmoke;
+        transition: 1.5s;
+      }
+      /* Navbar CSS End */
+      /* Footer CSS Start   */
+      /* Footer CSS End  */
+      /* website name css start*/
+      .Ryan{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: xx-large;
+        color: whitesmoke;
+      }
+      .Club{
+        font-family: 'Dancing Script' , cursive;
+        color: whitesmoke;
+      }
+      /* website name css end  */
+  
+    .h1{
+        font-family: serif;
+        font-size: 70px;
+        color: goldenrod;
+        text-align: center;
+    }
+    .h1:hover{
+        color: white;
+        transition: 1.5s;
+    }
+
+    h2{
+        font-family: serif;
+        font-size: 70px;
+        color: goldenrod;
+    }
+    h2:hover{
+        color: white;
+        transition: 1.5s;
+    }
+
+    h3{
+        font-family: serif;
+        font-size: 70px;
+        color: goldenrod;
+        text-align: center;
+    }
+    h3:hover{
+        color: white;
+        transition: 1.5s;
+    }
+
+    h4{
+        font-family: serif;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    .p{
+        font-style: italic;
+        font-family: sans-serif;
+        color: rgba(255, 255, 255, 0.431);
+        text-align: justify;
+    }
+    .p:hover{
+        color: white;
+        transition: 1.5s;
+    }
+    h5{
+        font-style: italic;
+        font-family: sans-serif;
+        font-size: large;
+        color: rgba(255, 255, 255, 0.431);
+        cursor: pointer;
+    }
+    h5:hover{
+        color: white;
+        transition: 1.5s;
+    }
+    .container-cardd
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    
+}
+
+.container-card .cardd{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 350px;
+    background: #000000;
+    border-radius: 20px;
+    /* box-shadow: 0 10px 40px rgba(255, 248, 248, 0.767); */
+    transition: 1.5s;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+.container-card .cardd:hover{
+
+    height: 400px;
+}
+
+.container-card .cardd .imgBox{
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    transition: 1.5s;
+    overflow: hidden;
+}
+.container-card .cardd:hover .imgBox
+{
+    top: -100px;
+    scale: 0.75;
+    /* box-shadow: 0 5px 20px rgba(225, 221, 221, 0.97); */
+}
+
+.container-card .cardd .imgBox img{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container-card .cardd .contentt
+{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 30px;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: 1.5s;
+}
+.container-card .cardd:hover .contentt
+{
+    top: 130px;
+    height: 250px;
+}
+.container-card .cardd .contentt h2{
+    font-weight: 700;
+    font-size: 1.5em;
+    
+}
+.container-card .cardd .contentt h6{
+   color: #f8f3f3;
+}
+.container-card .cardd .contentt h2{
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+    .main-img{
+  border-radius: 25px;
+}
+  </style>
+  </head>
+    <body>
+             <!-- Navbar Start  -->
+    <nav class="navbar navbar-expand-lg  bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href ="#"><img src="Images/Logo.png" id="Logo" ><span class="Ryan">Ryan </span><span class="Club">Sport Club</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item ul-item">
+                <a class="nav-link mx-2 active a-item fw-bold" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2 dropdown-toggle a-item fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item " href="Indoor.html">Indoor Sports</a></li>
+                  <li><a class="dropdown-item " href="outdoor.html">Outdoor Sports</a></li>
+                  <li><a class="dropdown-item " href="recreation.html">Recreation</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="feedback form.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="Contact Us .html">Contact Us</a>
+              </li>
+               <li class="nav-item">
+              <button class="Nav-btn"><a  class="nav-link mx-2 a-item fw-bold" href="member ship form.html">Get Membership</a></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+        <div class="container-fluid" style="background-color: black; color: whitesmoke;">
+            <h1 class="h1">Swimming</h1>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" >
+                    <p class="p">swimming, in recreation and sports, the propulsion of the body through water by combined arm and leg motions and the natural flotation of the body. Swimming as an exercise is popular as an all-around body developer and is particularly useful in therapy and as exercise for physically handicapped persons.Swimming is an individual or team racing sport that requires the use of one's entire body to move through water. The sport takes place in pools or open water.Swimming is the movement of the body through water using arms and legs. People can swim in the sea, swimming pools, rivers and lakes. People swim for exercise, for fun, and as a sport. There are several styles of swimming, known as "strokes", including: front crawl, breaststroke, freestyle, butterfly, and backstroke.keeps your heart rate up but takes some of the impact stress off your body. builds endurance, muscle strength and cardiovascular fitness. helps you maintain a healthy weight, healthy heart and lungs. tones muscles and builds strength.Swimming is the self-propulsion of a person through water, or other liquid, usually for recreation, sport, exercise, or survival.Health & Fitness
+                      In one hour, swimming burns about 40% more calories than biking.
+                      Swimming burns about 30% more calories than running per hour.
+                      Swimming strengthens the heart and lungs.
+                      More than half of competitive swimmers experience shoulder pain.
+                      Swimming can improve exercise-induced asthma.6. Basic Swimming Strokes
+                      Start on your stomach with both arms stretched to the front, legs extended back and head up.
+                      Keep your head down and only turn to take a breath.
+                      Kick your legs continuously at the hips while alternating, keeping toes pointed and ankles relaxed, with the knees bent slightly.
+                      Evidence of recreational swimming in prehistoric times has been found, with the earliest evidence dating to Stone Age paintings from around 10,000 years ago. Written references date from 2000 BC, with some of the earliest references to swimming including the Iliad, the Odyssey, the Bible, Beowulf, the Quran and others.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <img src="Images/swimming 1.jpg" alt="" width="100%" height="575px" class="main-img">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="background-color: black; color: whitesmoke;">
+          <h1 class="h1">Top Players</h1>
+          <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="container-card">
+                <div class="cardd" style="color: #009688;">
+                    <div class="imgBox">
+                        <img src="Images/swimming 2Michael Phelps.jpg"alt="" style="height: 450px;">
+                    </div>
+                    <div class="contentt">
+                        <h2 >Tadej Pogacar</h2>
+                        <p>
+                          <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">From:</span> American</h6>
+                          <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;"> Born in:</span> June 30, 1985 (age 38 years)</h6>
+                          <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Height:</span>    1.93 m</h6>
+                          <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Weight:</span>  90 kg</h6>
+                          <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Followers:</span> 1.4M+</h6>
+                         </p>
+                    </div>
+                </div>
+               </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="container-card">
+                  <div class="cardd" style="color: #009688;">
+                      <div class="imgBox">
+                          <img src="Images/swimming 3.jpg" alt="" style="height: 350px;">
+                      </div>
+                      <div class="contentt">
+                          <h2>Wout van Aert</h2>
+                          <p>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">From:</span>Scotland</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;"> Born in:</span>  October 13, 1982 (age 41 years) </h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Height:</span> 1.96 m</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Weight:</span>  104 kg</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Followers:</span> 85k+</h6>
+                           </p>
+                      </div>
+                  </div>
+                 </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="container-card">
+                  <div class="cardd" style="color: #009688;">
+                      <div class="imgBox">
+                          <img src="Images/swimming 4.jpg" alt="" style="height: 400px;">
+                      </div>
+                      <div class="contentt">
+                          <h2> Remco Evenepoel</h2>
+                          <p>
+                            <h6><span style="color: rgb(255, 0, 0); font-size: x-large;">From:</span>Russian</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;"> Born in:</span> November 16, 1971 (age 52 years)</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Height:</span>   1.1.97 m</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Weight:</span> 87 kg</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Followers:</span>  83k+</h6>
+                           </p>
+                      </div>
+                  </div>
+                 </div>
+              </div>
+          </div>
+      </div>
+        <div class="container-fluid" style="color: whitesmoke; background-color: black;">
+        <h3 style="text-align: center;">Swimming Rules</h3>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <p class="p">
+                <h5 > 1 Starts and Turns:
+
+
+                  Swimmers must start from a stationary position either in the water or on the starting block.
+                 False starts, where a swimmer leaves the starting block before the starting signal, usually result in disqualification.
+                  Turns must be executed according to specific techniques, such as touch turns or flip turns, depending on the stroke being swum.</h5>
+                <h5 > 2 Stroke Regulations: 
+
+
+                  strokes have different rules regarding technique and form. The main competitive strokes are freestyle, backstroke, breaststroke, and butterfly.
+                   Each stroke has specific rules regarding the arm and leg movements, body position, and breathing technique.
+                    For example, in breaststroke, swimmers must touch the wall with both hands simultaneously at the end of each stroke cycle, while in butterfly, both arms must move simultaneously over the water. 
+                    their own serve in order to win a point.</h5>
+                <h5 > 3 Lane Etiquette:
+                  Swimmers must stay in their assigned lanes throughout the race.
+                  Slower swimmers should keep to the right side of the lane to allow faster swimmers to pass on the left.</h5>
+                <h5 >  4 Finishes:
+                  Swimmers must touch the wall with any part of their body to finish the race.
+                    Timing is crucial, as races are often decided by hundredths of a second.</h5>
+                <h5 > 5 Equipment Regulations:
+                  Swimmers are usually allowed to wear swimsuits, swim caps, and goggles.
+                 Swimsuits must comply with specific regulations regarding materials and design, particularly in competitive events where high-tech suits are prohibited.
+                    Use of performance-enhancing equipment such as snorkels, fins, and hand paddles may be restricted or prohibited depending on the competition. </h5>
+                <h5 > 6 Diving Regulations:
+                  In certain events, such as the individual medley or relay events, swimmers are required to dive into the water at the start of the race.
+                    Diving techniques must comply with safety standards to prevent injury.</h5>
+                <h5 > 7 Disqualifications:
+                  Swimmers can be disqualified for various reasons, including false starts, illegal strokes or turns, improper finishes, or violating lane etiquette.
+                  Disqualifications are typically determined by race officials or judges and are subject to review. </h5>
+                <h5  > 8 Drug Testing and Anti-Doping Regulations:
+                  Swimmers are subject to drug testing to ensure fair competition and maintain the integrity of the sport.
+                    The use of performance-enhancing drugs or substances is strictly prohibited and can result in severe penalties, including suspension or banning from competition.</h5></p>
+            </div>
+        </div>
+        </div>
+              <!-- Footer Start  -->
+   <div class="container-fluid" style="background-color: whitesmoke;color: black;">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+      <h1 class="fw-bold" style="text-align: center;" >Our Partners</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Adidas.png" alt="">ADIDAS</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Nike.png" alt="">NIKE</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Puma.png" alt="" style="height: 70px; width: 70px;">PUMA</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Reebok.png" alt="" style="height: 70px; width: 100px;" >REEBOK</h1>
+      </div>
+    </div>
+   </div>
+    <div class="container-fluid ">
+      <footer
+      class="text-center text-lg-start text-whitesmoke"
+      >
+      <section
+      class="d-flex justify-content-between p-4" style="border-top:gray solid ; border-bottom:gray solid ;"
+      >
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-facebook-f "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-twitter "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-google "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-instagram "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-linkedin "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-github "> </i>
+        </a>
+      </div>
+      </section>
+      <section class="">
+    <div class="container-fluid text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <h6><img src="Images/Logo.png" id="Logo" ><span class="Ryan ">Ryan </span><span class="Club">Sport Club</span></h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;" />
+              <p>Ryan Sport Club, an effort has been made to provide a world class facilities and infrastructure for the promotion of sports and health</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Facilities</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;" />
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Free World Trip</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Yearly Events</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Wining Party</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">MeetUp With Sport Stars</a>
+          </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Useful links</h6>
+        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;">
+        <p>
+          <a href="#!" class="text-white" style="text-decoration: none;">khizerayaz9@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">Irfanrahim679@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">mustafatariq610@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">kamran125ahmed@gmail.com</a>
+        </p>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+      <h6 class="text-uppercase fw-bold">Contact</h6>
+      <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;">
+      <p><i class="fa-solid fa-house mr-3" ></i>Karachi, Pakistan</p>
+      <p><i class="fa-solid fa-envelope text-white mr-3"></i>Ryansportclub@gmail.com</p>
+      <p><i class="fa-solid fa-phone text-white mr-3"></i>+92 0316 1261628</p>
+      <p><i class="fa-solid fa-print text-white mr-3"></i>+92 0316 1286007</p>
+  </div>
+      </div>
+    </div>
+      </section>
+      <div class="text-center p3" style="border-top: gray solid;">
+        <img src="Images/Logo.png" id="Logo" ><span class="Ryan">Ryan</span><Span class="Club">Sport Club</Span>    
+        All &COPY; Copy Rights are Reserved 2024:
+      </div>
+    <!-- Footer End  -->
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

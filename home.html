@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&family=Bebas+Neue&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+    <title>Ryan Sport Club</title>
+    <!-- Navbar CSS Start  -->
+    <style>
+      #Logo{
+        height: 50px;
+        width: 50px;
+      }
+      .container-fluid{
+        background-color:black ;
+        color: whitesmoke;
+      }
+      .a-item{
+        color: whitesmoke;
+        background-color: black;
+      }
+      .a-item:hover{
+        color: black;
+        background-color: whitesmoke;
+        transition: 1.5s;
+      }
+      .dropdown-menu,.dropdown-item{
+        background-color: black;
+        color: whitesmoke;
+      }
+      .dropdown-item:hover{
+        background-color: whitesmoke;
+        color: black;
+        transition: 1.5s;
+      }
+      .Nav-btn{
+        background-color: black;
+      }
+      .Nav-btn:hover{
+        background-color: whitesmoke;
+        transition: 1.5s;
+      }
+      /* Navbar CSS End */
+      /* Footer CSS Start   */
+      /* Footer CSS End  */
+      /* website name css start*/
+      .Ryan{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: xx-large;
+        color: whitesmoke;
+      }
+      .Club{
+        font-family: 'Dancing Script' , cursive;
+        color: whitesmoke;
+      }
+      /* website name css end  */
+      /* Swiper  styles CSS Start */
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--swiper-theme-color);
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: var(--swiper-theme-color);
+      fill: none;
+      stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
+    /* Swiper CSS Style End  */
+    /* Discription Area CSS Start  */
+    .Discription{
+      background-color: black;
+      color: whitesmoke;
+      padding-left: 25px;
+      padding-top: 20px;
+      padding-right: 50px;
+      padding-bottom: 20px;
+    }
+    .Discription img{
+      height: 400px;
+      width: 600px;
+      border-radius: 25px;
+      margin-top: 55px;
+    }
+    .Discription2 img{
+      height: 200px;
+      width: 200px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      transition:all 0.8s;
+    }
+    .Discription2 img:hover{
+      transform: scale(1.10);
+    }
+    /* Discription Area CSS End  */
+    </style>
+  </head>
+  <body>
+     <!-- Navbar Start  -->
+    <nav class="navbar navbar-expand-lg  bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href ="#"><img src="Images/Logo.png" id="Logo" ><span class="Ryan">Ryan </span><span class="Club">Sport Club</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item ul-item">
+                <a class="nav-link mx-2 active a-item fw-bold" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2 dropdown-toggle a-item fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item " href="Indoor.html">Indoor Sports</a></li>
+                  <li><a class="dropdown-item " href="outdoor.html">Outdoor Sports</a></li>
+                  <li><a class="dropdown-item " href="recreation.html">Recreation</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="feedback form.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="Contact Us .html">Contact Us</a>
+              </li>
+               <li class="nav-item">
+              <button class="Nav-btn"><a  class="nav-link mx-2 a-item fw-bold" href="member ship form.html">Get Membership</a></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+     <!-- Swiper Start -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="Images/boxing.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/chess.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/cricket.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/cycling.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/football.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/golf.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/scotch.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/surfing.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/swiming.jpg" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </div>
+  <!-- Swiper End  -->
+   <!-- Discription Area Start  -->
+   <div class="container-flui Discription">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+        <h1 class="fw-bold">Club Info</h1>
+        <p>Ryan Sport Club, an effort has been made to provide a world class facilities and infrastructure for the promotion of sports and health. During the Past time, Ryan sport club has emerged as one of the best facilities in the country in the area of sports and health and also it is making strides to acquire a formidable presence in the international. The club provides the facilities like "Indoor Sports", Outdoor Sports" and "Recreation".Ryan sports club  multifaceted construct representing the degree to which participation in a sport activity becomes a central component of a person's life and provides both hedonic and symbolic value. <br>
+          The benefits of physical activity are universal for all children, including those with disabilities. The participation of children with disabilities in sports and recreational activities promotes inclusion, minimizes deconditioning, optimizes physical functioning, and enhances overall well-being. <br>
+          Sport" is a cultural field of activity in which people voluntarily enter into a relationship with other people in order to compare their respective abilities and skills in the art of movement - according to self-imposed or adopted rules and on the basis of socially accepted ethical values </p>
+      </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+      <img src="Images/swiming(1)" alt="">
+    </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top: 20px;"></div>
+      <h1 class="fw-bold" style="text-align: center;">Most Played Sports</h1>
+      <p class="fw-bold" style="text-align: center;">There are world Top  most Played Sports list:</p>
+    </div>
+      </div>
+   </div>
+      <div class="container-fluid Discription2">
+        <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+      <h3 class="fw-bold text-white">  Soccer </h3>
+      <img src="Images/soccer.jpg" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <h3  class="fw-bold text-white">  Cricket </h3>
+        <img src="Images/cricket(1).jpg" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+     <h3  class="fw-bold text-white">  Field Hockey </h3>
+     <img src="Images/hockey.webp" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+     <h3 class="fw-bold text-white">  Tennis</h3>
+     <img src="Images/CardTennis.jpg" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+       <h3 class="fw-bold text-white">  Table Tennis</h3>
+       <img src="Images/CardTableTennis.jpg" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+       <h3 class="fw-bold text-white">  Baseball</h3>
+       <img src="Images/v-baseball.jpg" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+       <h3 class="fw-bold text-white">  Golf</h3>
+       <img src="Images/golf.jpg" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <h3 class="fw-bold text-white">  Basketball</h3>
+        <img src="Images/CardBasketBall.jpg" alt="">
+      </div>
+      </div>
+  </div>
+   <div class="container-fluid Discription">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+        <h1 class="fw-bold" style="text-align: center;">Activities</h1>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <h6 class="fw-bold"> Here is a list of the Ryan Sport Club international sports events in which teams from different countries battle it out, both for individual sports and multi-sport events. In these events countries of the world are brought together in competition - in some of these most countries of the world are represented, in others only a select few. See our discussion on the Ryan Sport club Most Popular Sporting Events, there is no surprise that the FIFA World Cup and the Olympics top most lists </h6>
+    </div> <br>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <h1 style="text-align: center;">World Baseball Classic</h1>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6" style="margin-bottom: 15px;">
+      <h5 class="fw-bold">Baseball </h5> <hr>
+      <h5>World Baseball Classic </h5> <br>
+      <p class="fw-bold">	The World Baseball Classic is an international baseball tournament for national baseball teams from around the world, sanctioned by the IBAF and includes Major League Baseball players playing for their home country. It is held every four years. This event was (sort of) preceded by the baseball World Cup. <br>
+        History — about the Baseball World Classic, first held in 2006</p>
+        <h5>Winner List</h5>
+        <p class="fw-bold">
+          Year   Winner   Runner-up   3rd place <hr> <br></p>
+      <p>2023	<br>   Japan, USA	 &        Mexico <br></p>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6" style="margin-bottom: 15px;">
+      <img src="Images/eventbaseball.jpg" alt="">
+    </div>
+   </div>
+   </div>
+   <div class="container-fluid Discription">
+    <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <h1 style="text-align: center;">World Mind Games </h1>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6" style="margin-bottom: 15px;">
+      <h5 class="fw-bold">The World Mind Sports Games (WMSG)  </h5> <hr>
+      <h5>World Mind Games</h5> <br>
+      <p class="fw-bold">This event was introduced as a mind-version of the Olympic Games, held around the same time as the physical events. An event was held in 2008 and 2012, with games in bridge, chess, draughts, go and xiangqi (Chinese chess).The World Mind Games (SportAccord) — an event founded by the International Mind Sports Association (IMSA), consisting of competitions for many sports that are classified as mind-sports.<br>
+        History — The event was held annually from 2011 to 2014.</p>
+        <h5>Winner List</h5>
+        <p class="fw-bold">
+          Year   Winner   Runner-up   3rd place <hr> <br></p>
+      <p>2023	<br>   Japan, USA	 &        Mexico <br></p>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6" style="margin-bottom: 15px;">
+      <img src="Images/mindevent.jpg" alt="">
+    </div>
+   </div>
+   </div>
+   <div class="container-fluid Discription">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <h1 style="text-align: center;">European Games	</h1>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6" style="margin-bottom: 15px;">
+      <h5 class="fw-bold">Archery </h5> <hr>
+      <h5>European Games	 </h5> <br>
+      <p class="fw-bold">A Multisport event along the lines of the Summer Olympic Games, though limited to athletes from European nations. The inaugural European Games are scheduled to be held in Baku, Azerbaijan, in 2015.The European Games is a multi-sport event held every four years, featuring athletes from European nations competing across various sports disciplines. It serves as a continental-level competition akin to the Olympics, showcasing European sporting talent and fostering unity and camaraderie among nations. <br>
+        History — European Games were held in 2015, and has been held every four years since.</p>
+        <h5>Hosts List</h5>
+        <p class="fw-bold">
+          European Game Hosts<hr> <br></p>
+      <p>2023:<br>  Kraków, Poland <br></p>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6" style="margin-bottom: 15px;">
+      <img src="Images/Archeryevents.jpg" alt="">
+    </div>
+   </div>
+   </div>
+    <!-- Discription Area End  -->
+      <!-- Footer Start  -->
+   <div class="container-fluid" style="background-color: whitesmoke;color: black;">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+      <h1 class="fw-bold" style="text-align: center;">Our Partners</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Adidas.png" alt="">ADIDAS</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Nike.png" alt="">NIKE</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Puma.png" alt="" style="height: 70px; width: 70px;">PUMA</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Reebok.png" alt="" style="height: 70px; width: 100px;" >REEBOK</h1>
+      </div>
+    </div>
+   </div>
+    <div class="container-fluid ">
+      <footer
+      class="text-center text-lg-start text-whitesmoke"
+      >
+      <section
+      class="d-flex justify-content-between p-4" style="border-top:gray solid ; border-bottom:gray solid ;"
+      >
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-facebook-f "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-twitter "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-google "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-instagram "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-linkedin "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-github "> </i>
+        </a>
+      </div>
+      </section>
+      <section class="">
+    <div class="container-fluid text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <h6><img src="Images/Logo.png" id="Logo" ><span class="Ryan ">Ryan </span><span class="Club">Sport Club</span></h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;" />
+              <p>Ryan Sport Club, an effort has been made to provide a world class facilities and infrastructure for the promotion of sports and health</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Facilities</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;" />
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Free World Trip</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Yearly Events</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Wining Party</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">MeetUp With Sport Stars</a>
+          </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Useful links</h6>
+        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;">
+        <p>
+          <a href="#!" class="text-white" style="text-decoration: none;">khizerayaz9@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">Irfanrahim679@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">mustafatariq610@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">kamran125ahmed@gmail.com</a>
+        </p>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+      <h6 class="text-uppercase fw-bold">Contact</h6>
+      <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;">
+      <p><i class="fa-solid fa-house mr-3" ></i>Karachi, Pakistan</p>
+      <p><i class="fa-solid fa-envelope text-white mr-3"></i>Ryansportclub@gmail.com</p>
+      <p><i class="fa-solid fa-phone text-white mr-3"></i>+92 0316 1261628</p>
+      <p><i class="fa-solid fa-print text-white mr-3"></i>+92 0316 1286007</p>
+  </div>
+      </div>
+    </div>
+      </section>
+      <div class="text-center p3" style="border-top: gray solid;">
+        <img src="Images/Logo.png" id="Logo" ><span class="Ryan">Ryan</span><Span class="Club">Sport Club</Span>    
+        All &COPY; Copy Rights are Reserved 2024:
+      </div>
+    <!-- Footer End  -->
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

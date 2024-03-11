@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&family=Bebas+Neue&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+    <title>Ryan Sport Club</title>
+<style>
+ /* Navbar CSS Start   */
+      #Logo{
+        height: 50px;
+        width: 50px;
+      }
+      .container-fluid{
+        background-color:black ;
+        color: whitesmoke;
+      }
+      .a-item{
+        color: whitesmoke;
+        background-color: black;
+      }
+      .a-item:hover{
+        color: black;
+        background-color: whitesmoke;
+        transition: 1.5s;
+      }
+      .dropdown-menu,.dropdown-item{
+        background-color: black;
+        color: whitesmoke;
+      }
+      .dropdown-item:hover{
+        background-color: whitesmoke;
+        color: black;
+        transition: 1.5s;
+      }
+      .Nav-btn{
+        background-color: black;
+      }
+      .Nav-btn:hover{
+        background-color: whitesmoke;
+        transition: 1.5s;
+      }
+      /* Navbar CSS End */
+      /* Footer CSS Start   */
+      /* Footer CSS End  */
+      /* website name css start*/
+      .Ryan{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: xx-large;
+        color: whitesmoke;
+      }
+      .Club{
+        font-family: 'Dancing Script' , cursive;
+        color: whitesmoke;
+      }
+      /* website name css end  */
+.feedback-box{
+    font-family: 'Josefin Sans', sans-serif;
+    background: url(images/b1.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-form {
+    width:auto;
+    padding: 40px;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    height: auto;
+    border: 3px solid rgb(250, 250, 250);
+   
+
+
+}
+.contact-form h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: bolder;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+
+.contact-form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+
+}
+
+.contact-form .input-box input:focus~span,
+.contact-form .input-box input:valid~span,
+.contact-form .input-box textarea:focus~span,
+.contact-form .input-box textarea:valid~span {
+    color: #ff0303;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    transform: translatey(-35px);
+}
+/* comment area css start */
+#feedback-comments{
+        margin-left: 20px;
+        height: 100px;
+        width: 90%;
+        border: 2px solid black;
+        border-radius: 8px;
+    }
+/* comment area css end */
+
+/* icon css start */
+#feedback-para{
+        display: flex;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        font-style: italic;
+
+    }
+    #feedback-icon{
+        justify-content: center;
+        font-size: 50px;
+        height: 50px;
+        width: 50px;
+        transition: .4s;
+        flex-wrap: wrap;
+        color: rgba(221, 153, 51, 0.385);
+        margin: 20px;
+        margin-left: 25px;
+
+    }
+    #feedback-icon:hover{
+        color: orange;
+    }
+/* icon css end */
+
+.contact-form .input-box input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    background-color: #010a0b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    transition: .9s;
+    border: 2px white solid;
+    margin-left: 10px;
+    
+}
+.contact-form .input-box input[type="submit"]:hover{
+    color: #010a0b;
+    background-color: #fff;
+    border: 2px rgb(0, 0, 0) solid;
+ 
+
+}
+
+
+
+
+
+
+@media (max-width:800px) {
+    .contact {
+        padding: 50px;
+
+    }
+
+    .cantainer {
+        flex-direction: column;
+
+    }
+
+    .cantainer .contactinfo {
+        margin-bottom: 40px;
+
+    }
+
+    .cantainer .contactinfo,
+    .contact-form {
+        width: 80%;
+        
+    }
+    
+
+}
+
+
+   
+</style>
+</head>
+<body>
+      <!-- Navbar Start  -->
+      <nav class="navbar navbar-expand-lg  bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href ="#"><img src="Images/Logo.png" id="Logo" ><span class="Ryan">Ryan </span><span class="Club">Sport Club</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item ul-item">
+                <a class="nav-link mx-2 active a-item fw-bold" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2 dropdown-toggle a-item fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item " href="Indoor.html">Indoor Sports</a></li>
+                  <li><a class="dropdown-item " href="outdoor.html">Outdoor Sports</a></li>
+                  <li><a class="dropdown-item " href="recreation.html">Recreation</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="feedback form.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="Contact Us .html">Contact Us</a>
+              </li>
+               <li class="nav-item">
+              <button class="Nav-btn"><a  class="nav-link mx-2 a-item fw-bold" href="member ship form.html">Get Membership</a></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+    <!-- feedback start -->
+    <div class="feedback-box">
+    <div class="contact-form">
+        <form   id="form">
+            <h2 style="color: #fff;">Give your Feedback</h2>
+            <div class="input-box">
+                <input style="border-radius: 6px;" type="text"  required="required" pattern="/^[a-zA-Z]{3,}$/">
+                <span style="padding-left: 10px;">Name</span>
+            </div>
+            <div class="input-box">
+                <input style="border-radius: 6px;" type="email" required="required">
+                <span style="padding-left: 10px;">Email Address</span>
+            </div>
+            <div class="input-box">
+                <input style="border-radius: 6px;" type="number" required="required">
+                <span style="padding-left: 10px;">Phone number</span>
+            </div>
+            <p id="feedback-para">We would like your feedback to improve our website.</p>
+                     <!-- comment area start -->
+            <textarea name="comments" id="feedback-comments" style="font-family:sans-serif;font-size:1.2em;">
+                Hey... say something!
+                </textarea>
+                        <!-- comment area end -->
+                                     <!-- icon start -->
+                <p id="feedback-para">What is your opinion about this website?</p>
+                <i class="fa-solid fa-face-frown" id="feedback-icon"></i>
+                <i class="fa-solid fa-face-rolling-eyes" id="feedback-icon"></i>
+                <i class="fa-solid fa-face-meh"id="feedback-icon"></i>
+                <i class="fa-solid fa-face-smile-beam" id="feedback-icon"></i>
+               <i class="fa-solid fa-face-grin-stars" id="feedback-icon"></i>
+                        
+                 <h4 style="display: flex;justify-content: center;font-weight: bold; font-style: italic;
+                     color: #ffffff;">Rate Us</h4>
+               <div class="feedback-star">
+               <i class="fa-solid fa-star"id="feedback-icon"></i>
+               <i class="fa-solid fa-star"id="feedback-icon"></i>
+               <i class="fa-solid fa-star"id="feedback-icon"></i>
+               <i class="fa-solid fa-star"id="feedback-icon"></i>
+               <i class="fa-solid fa-star"id="feedback-icon"></i>
+            </div>
+<!-- icon end -->
+
+            <div class="input-box">
+                <input style="border-radius: 6px;" onclick="addtocard()" type="submit" value="send">
+            </div>
+        </form>
+    </div>
+</div>
+    <!-- feedback end -->
+ <!-- Footer Start  -->
+ <div class="container-fluid" style="background-color: whitesmoke;color: black;">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+    <h1 class="fw-bold" style="text-align: center;">Our Partners</h1>
+    </div>
+    <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+      <h1 class="fw-bold" ><img src="Images/Adidas.png" alt="">ADIDAS</h1>
+    </div>
+    <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+      <h1 class="fw-bold" ><img src="Images/Nike.png" alt="">NIKE</h1>
+    </div>
+    <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+      <h1 class="fw-bold" ><img src="Images/Puma.png" alt="" style="height: 70px; width: 70px;">PUMA</h1>
+    </div>
+    <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+      <h1 class="fw-bold" ><img src="Images/Reebok.png" alt="" style="height: 70px; width: 100px;" >REEBOK</h1>
+    </div>
+  </div>
+ </div>
+ <div class="container-fluid ">
+    <footer
+    class="text-center text-lg-start text-whitesmoke"
+    >
+    <section
+    class="d-flex justify-content-between p-4" style="border-top:gray solid ; border-bottom:gray solid ;"
+    >
+    <div class="me-5">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <div>
+      <a href="" class="text-white m-4">
+      <i class="fa-brands fa-facebook-f "> </i>
+      </a>
+      <a href="" class="text-white m-4">
+      <i class="fa-brands fa-twitter "> </i>
+      </a>
+      <a href="" class="text-white m-4">
+      <i class="fa-brands fa-google "> </i>
+      </a>
+      <a href="" class="text-white m-4">
+      <i class="fa-brands fa-instagram "> </i>
+      </a>
+      <a href="" class="text-white m-4">
+      <i class="fa-brands fa-linkedin "> </i>
+      </a>
+      <a href="" class="text-white m-4">
+      <i class="fa-brands fa-github "> </i>
+      </a>
+    </div>
+    </section>
+    <section class="">
+  <div class="container-fluid text-center text-md-start mt-5">
+    <div class="row mt-3">
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <h6><img src="Images/Logo.png" id="Logo" ><span class="Ryan ">Ryan </span><span class="Club">Sport Club</span></h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;" />
+            <p>Ryan Sport Club, an effort has been made to provide a world class facilities and infrastructure for the promotion of sports and health</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Facilities</h6>
+        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;" />
+        <p>
+          <a href="#!" class="text-white" style="text-decoration: none;">Free World Trip</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white" style="text-decoration: none;">Yearly Events</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white" style="text-decoration: none;">Wining Party</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white" style="text-decoration: none;">MeetUp With Sport Stars</a>
+        </p>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+      <h6 class="text-uppercase fw-bold">Useful links</h6>
+      <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;">
+      <p>
+        <a href="#!" class="text-white" style="text-decoration: none;">khizerayaz9@gmail.com</a>
+      </p>
+      <p>
+        <a href="#!" class="text-white"style="text-decoration: none;">Irfanrahim679@gmail.com</a>
+      </p>
+      <p>
+        <a href="#!" class="text-white"style="text-decoration: none;">mustafatariq610@gmail.com</a>
+      </p>
+      <p>
+        <a href="#!" class="text-white"style="text-decoration: none;">kamran125ahmed@gmail.com</a>
+      </p>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+    <h6 class="text-uppercase fw-bold">Contact</h6>
+    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;">
+    <p><i class="fa-solid fa-house mr-3" ></i>Karachi, Pakistan</p>
+    <p><i class="fa-solid fa-envelope text-white mr-3"></i>Ryansportclub@gmail.com</p>
+    <p><i class="fa-solid fa-phone text-white mr-3"></i>+92 0316 1261628</p>
+    <p><i class="fa-solid fa-print text-white mr-3"></i>+92 0316 1286007</p>
+</div>
+    </div>
+  </div>
+    </section>
+    <div class="text-center p3" style="border-top: gray solid;">
+      <img src="Images/Logo.png" id="Logo" ><span class="Ryan">Ryan</span><Span class="Club">Sport Club</Span>    
+      All &COPY; Copy Rights are Reserved 2024:
+    </div>
+  <!-- Footer End  -->
+</script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script >
+        function addtocard(){
+        Swal.fire({
+  title: "Thank you!",
+  text: "Thank you for your feedback!",
+  icon: "success"
+});
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&family=Bebas+Neue&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+    <title>Ryan Sport Club</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+     /* Navbar CSS Start   */
+      #Logo{
+        height: 50px;
+        width: 50px;
+      }
+      .container-fluid{
+        background-color:black ;
+        color: whitesmoke;
+      }
+      .a-item{
+        color: whitesmoke;
+        background-color: black;
+      }
+      .a-item:hover{
+        color: black;
+        background-color: whitesmoke;
+        transition: 1.5s;
+      }
+      .dropdown-menu,.dropdown-item{
+        background-color: black;
+        color: whitesmoke;
+      }
+      .dropdown-item:hover{
+        background-color: whitesmoke;
+        color: black;
+        transition: 1.5s;
+      }
+      .Nav-btn{
+        background-color: black;
+      }
+      .Nav-btn:hover{
+        background-color: whitesmoke;
+        transition: 1.5s;
+      }
+      /* Navbar CSS End */
+      /* Footer CSS Start   */
+      /* Footer CSS End  */
+      /* website name css start*/
+      .Ryan{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: xx-large;
+        color: whitesmoke;
+      }
+      .Club{
+        font-family: 'Dancing Script' , cursive;
+        color: whitesmoke;
+      }
+      /* website name css end  */
+      /* Banner CSS Start  */
+#banner{
+  background-image: url('images/skate.jpg');
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+}
+    .header-text{
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .header-text h4{
+      font-size: 35px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 17px;
+    }
+
+  .header-text p{
+       font-weight: 550;
+       
+  }
+
+
+    .header-img{
+       max-width: 100%;
+       margin-left: 25%;
+       margin-top: 20px;
+       background-size: cover;
+
+    }
+    /* Banner CSS End  */
+     /* Card CSS Start  */
+     .card-body{
+      color: black;
+      transition: all 1.5s;
+     }
+     .card-body :hover{
+      color: whitesmoke;
+      background-color: black;
+     }
+     .btn{
+        background-color: black;
+        color: whitesmoke;
+        border: black;
+        border-style: solid;
+     }
+       .btn:hover{
+        background-color: whitesmoke !important;
+        color: black !important;
+        transition: 1.5s;
+       }
+     /*  Card CSS End   */
+</style>
+  </head>
+
+
+
+     <body>
+       <!-- Navbar Start  -->
+    <nav class="navbar navbar-expand-lg  bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href ="#"><img src="Images/Logo.png" id="Logo" ><span class="Ryan">Ryan </span><span class="Club">Sport Club</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item ul-item">
+              <a class="nav-link mx-2 active a-item fw-bold" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle a-item fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Facilities
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item " href="Indoor.html">Indoor Sports</a></li>
+                <li><a class="dropdown-item " href="outdoor.html">Outdoor Sports</a></li>
+                <li><a class="dropdown-item " href="recreation.html">Recreation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 a-item fw-bold" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 a-item fw-bold" href="feedback form.html">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 a-item fw-bold" href="Contact Us .html">Contact Us</a>
+            </li>
+             <li class="nav-item">
+            <button class="Nav-btn"><a  class="nav-link mx-2 a-item fw-bold" href="member ship form.html">Get Membership</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- Navbar End -->
+    <!-- banner starts -->
+        <div  class="container-fluid" id="banner">
+          <div class="header-text">
+            <h4>RECREATION SPORTS</h4>
+            <p>Have some Recreation family sport fun with Golf,<br> Tennis, Cricket, and more!. </p>
+          </div>
+        </div>
+      <!-- banner ends -->
+       <!-- Card Start  -->
+    <div class="container-fluid" style="background-color: black;" id="card-body">
+      <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/cardgolf.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Golf</h5>
+                    <p class="card-text">Golf is a very popular sport worldwide. It is a game played on a large outdoor course, the object being to propel a small hard ball into a series of 'holes' with as few strokes as</p>
+                    <a href="golf detail page.html" class="btn" style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/CardTennis.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Tennis</h5>
+                    <p class="card-text">Tennis is a popular racket sport played either between two individuals (singles) or two teams of two players each (doubles). It is played on various surfaces such as grass, clay, or</p>
+                    <a href="tennis detail page.html" class="btn " style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/cardbaseball.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Baseball</h5>
+                    <p class="card-text">Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play</p>
+                    <a href="baseball detail page.html" class="btn " style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/CardBasketBall.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Basket Ball</h5>
+                    <p class="card-text">In December 1891, James Naismith, a Canadian-American professor of physical education and instructor at the International Young Men's Christian Association Training School (now)</p>
+                    <a href="Basketball more..html" class="btn " style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/CardBowling.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Bowling</h5>
+                    <p class="card-text">The earliest known forms of bowling date back to ancient Egypt,[5] with wall drawings depicting bowling being found in a royal Egyptian tomb dated to 3200 BC and miniature</p>
+                    <a href="Bowling more..html" class="btn " style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/cardcricket.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Cricket</h5>
+                    <p class="card-text">Cricket is believed to have begun possibly as early as the 13th century as a game in which country boys bowled at a tree stump or at the hurdle gate into a sheep pen. This gate</p>
+                    <a href="Circket more..html" class="btn " style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/CardHockey.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Hockey</h5>
+                    <p class="card-text">Games played with curved sticks and a ball can be found in the histories of many cultures. In Egypt, 4000-year-old carvings feature teams with sticks and a projectile, hurling dates to</p>
+                    <a href="Hockey more..html" class="btn " style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/CardBadminton.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Badminton</h5>
+                    <p class="card-text">Badminton is a fast-paced indoor sport played with a racket and a shuttlecock. It is often played as a singles or doubles game on a rectangular court divided by a net. The objective</p>
+                    <a href="badminton detail page.html" class="btn " style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/cardhiking.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Hiking</h5>
+                    <p class="card-text">Hiking is a popular outdoor activity that involves walking or trekking over long distances, typically on trails or paths in natural environments such as forests, mountains, deserts, and</p>
+                    <a href="hiking detail page.html" class="btn " style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/CardTableTennis.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Table Tennis</h5>
+                    <p class="card-text">The sport originated in Victorian England, where it was played among the upper-class as an after-dinner parlour game.[1][2] It has been suggested that makeshift versions of the game</p>
+                    <a href="Table tennis more..html" class="btn " style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body">
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;">
+                  <img src="Images/cardcycling.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Cycling</h5>
+                    <p class="card-text">Cycling, use of a bicycle for sport, recreation, or transportation. The sport of cycling consists of professional and amateur races, which are held mostly in continental Europe, the United</p>
+                    <a href="cycling detail.html" class="btn " style="border-radius: 9px; border:  solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 card-body"> 
+              <div class="card mt-4" style="width: 18rem ; border-radius: 15px;margin-bottom: 15px;">
+                  <img src="Images/CardKarate.jpg" class="card-img-top " alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px; height: 190px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Karate</h5>
+                    <p class="card-text">In Okinawa, there was an ancient martial dance called mēkata (舞方). The dancers danced to the accompaniment of songs and sanshin music, similar to karate kata. In the Okinawan</p>
+                    <a href="Karate more..html" class="btn " style="border-radius: 9px; border: black solid; background-color: black; color: whitesmoke;">Read More</a>
+                  </div>
+                </div>
+          </div>
+      </div>
+      </div>
+      <!-- Card End  -->
+        <!-- Footer Start  -->
+        <div class="container-fluid" style="background-color: whitesmoke;color: black;">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+            <h1 class="fw-bold" style="text-align: center;">Our Partners</h1>
+            </div>
+            <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+              <h1 class="fw-bold" ><img src="Images/Adidas.png" alt="">ADIDAS</h1>
+            </div>
+            <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+              <h1 class="fw-bold" ><img src="Images/Nike.png" alt="">NIKE</h1>
+            </div>
+            <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+              <h1 class="fw-bold" ><img src="Images/Puma.png" alt="" style="height: 70px; width: 70px;">PUMA</h1>
+            </div>
+            <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+              <h1 class="fw-bold" ><img src="Images/Reebok.png" alt="" style="height: 70px; width: 100px;" >REEBOK</h1>
+            </div>
+          </div>
+         </div>
+    <div class="container-fluid ">
+      <footer
+      class="text-center text-lg-start text-whitesmoke"
+      >
+      <section
+      class="d-flex justify-content-between p-4" style="border-top:gray solid ; border-bottom:gray solid ;"
+      >
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-facebook-f "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-twitter "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-google "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-instagram "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-linkedin "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-github "> </i>
+        </a>
+      </div>
+      </section>
+      <section class="">
+    <div class="container-fluid text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <h6><img src="Images/Logo.png" id="Logo" ><span class="Ryan ">Ryan </span><span class="Club">Sport Club</span></h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;" />
+              <p>Ryan Sport Club, an effort has been made to provide a world class facilities and infrastructure for the promotion of sports and health</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Facilities</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;" />
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Free World Trip</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Yearly Events</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Wining Party</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">MeetUp With Sport Stars</a>
+          </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Useful links</h6>
+        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;">
+        <p>
+          <a href="#!" class="text-white" style="text-decoration: none;">khizerayaz9@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">Irfanrahim679@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">mustafatariq610@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">kamran125ahmed@gmail.com</a>
+        </p>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+      <h6 class="text-uppercase fw-bold">Contact</h6>
+      <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;">
+      <p><i class="fa-solid fa-house mr-3" ></i>Karachi, Pakistan</p>
+      <p><i class="fa-solid fa-envelope text-white mr-3"></i>Ryansportclub@gmail.com</p>
+      <p><i class="fa-solid fa-phone text-white mr-3"></i>+92 0316 1261628</p>
+      <p><i class="fa-solid fa-print text-white mr-3"></i>+92 0316 1286007</p>
+  </div>
+      </div>
+    </div>
+      </section>
+      <div class="text-center p3" style="border-top: gray solid;">
+        <img src="Images/Logo.png" id="Logo" ><span class="Ryan">Ryan</span><Span class="Club">Sport Club</Span>    
+        All &COPY; Copy Rights are Reserved 2024:
+      </div>
+    <!-- Footer End  -->
+  </script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

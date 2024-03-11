@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&family=Bebas+Neue&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+    <title>Ryan Sport Club</title>
+  
+  <style>
+      /* Navbar CSS Start   */
+      #Logo{
+        height: 50px;
+        width: 50px;
+      }
+      .container-fluid{
+        background-color:black ;
+        color: whitesmoke;
+      }
+      .a-item{
+        color: whitesmoke;
+        background-color: black;
+      }
+      .a-item:hover{
+        color: black;
+        background-color: whitesmoke;
+        transition: 1.5s;
+      }
+      .dropdown-menu,.dropdown-item{
+        background-color: black;
+        color: whitesmoke;
+      }
+      .dropdown-item:hover{
+        background-color: whitesmoke;
+        color: black;
+        transition: 1.5s;
+      }
+      .Nav-btn{
+        background-color: black;
+      }
+      .Nav-btn:hover{
+        background-color: whitesmoke;
+        transition: 1.5s;
+      }
+      /* Navbar CSS End */
+      /* Footer CSS Start   */
+      /* Footer CSS End  */
+      /* website name css start*/
+      .Ryan{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: xx-large;
+        color: whitesmoke;
+      }
+      .Club{
+        font-family: 'Dancing Script' , cursive;
+        color: whitesmoke;
+      }
+      /* website name css end  */
+    .h1{
+        font-family: serif;
+        font-size: 70px;
+        color: goldenrod;
+        text-align: center;
+    }
+    .h1:hover{
+        color: white;
+        transition: 1.5s;
+    }
+
+    h2{
+        font-family: serif;
+        font-size: 70px;
+        color: goldenrod;
+    }
+    h2:hover{
+        color: white;
+        transition: 1.5s;
+    }
+
+    h3{
+        font-family: serif;
+        font-size: 70px;
+        color: goldenrod;
+        text-align: center;
+    }
+    h3:hover{
+        color: white;
+        transition: 1.5s;
+    }
+
+    h4{
+        font-family: serif;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    .p{
+        font-style: italic;
+        font-family: sans-serif;
+        color: rgba(255, 255, 255, 0.431);
+        text-align: justify;
+    }
+    .p:hover{
+        color: white;
+        transition: 1.5s;
+    }
+    h5{
+        font-style: italic;
+        font-family: sans-serif;
+        font-size: large;
+        color: rgba(255, 255, 255, 0.431);
+        cursor: pointer;
+    }
+    h5:hover{
+        color: white;
+        transition: 0.1s;
+    }
+    .container-cardd
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    
+}
+
+.container-card .cardd{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 350px;
+    background: #000000;
+    border-radius: 20px;
+    /* box-shadow: 0 10px 40px rgba(255, 248, 248, 0.767); */
+    transition: 1.5s;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+.container-card .cardd:hover{
+
+    height: 400px;
+}
+
+.container-card .cardd .imgBox{
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    transition: 1.5s;
+    overflow: hidden;
+}
+.container-card .cardd:hover .imgBox
+{
+    top: -100px;
+    scale: 0.75;
+    /* box-shadow: 0 5px 20px rgba(225, 221, 221, 0.97); */
+}
+
+.container-card .cardd .imgBox img{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container-card .cardd .contentt
+{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 30px;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: 1.5s;
+}
+.container-card .cardd:hover .contentt
+{
+    top: 130px;
+    height: 250px;
+}
+.container-card .cardd .contentt h2{
+    font-weight: 700;
+    font-size: 1.5em;
+    
+}
+.container-card .cardd .contentt h6{
+   color: #f8f3f3;
+}
+.container-card .cardd .contentt h2{
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+    .main-img{
+  border-radius: 25px;
+}
+  </style>
+  </head>
+    <body>
+             <!-- Navbar Start  -->
+    <nav class="navbar navbar-expand-lg  bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href ="#"><img src="Images/Logo.png" id="Logo" ><span class="Ryan">Ryan </span><span class="Club">Sport Club</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item ul-item">
+                <a class="nav-link mx-2 active a-item fw-bold" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2 dropdown-toggle a-item fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item " href="Indoor.html">Indoor Sports</a></li>
+                  <li><a class="dropdown-item " href="outdoor.html">Outdoor Sports</a></li>
+                  <li><a class="dropdown-item " href="recreation.html">Recreation</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="feedback form.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 a-item fw-bold" href="Contact Us .html">Contact Us</a>
+              </li>
+               <li class="nav-item">
+              <button class="Nav-btn"><a  class="nav-link mx-2 a-item fw-bold" href="member ship form.html">Get Membership</a></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+        <div class="container-fluid" style="background-color: black; color: whitesmoke;">
+            <h1 class="h1">Circket</h1>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" >
+                    <p class="p">Cricket is believed to have begun possibly as early as the 13th century as a game in which country boys bowled at a tree stump or at the hurdle gate into a sheep pen. This gate consisted of two uprights and a crossbar resting on the slotted tops; the crossbar was called a bail and the entire gate a wicket. The fact that the bail could be dislodged when the wicket was struck made this preferable to the stump, which name was later applied to the hurdle uprights. Early manuscripts differ about the size of the wicket, which acquired a third stump in the 1770s, but by 1706 the pitch—the area between the wickets—was 22 yards long.The ball, once presumably a stone, has remained much the same since the 17th century. Its modern weight of between 5.5 and 5.75 ounces (156 and 163 grams) was established in 1774.The primitive bat was no doubt a shaped branch of a tree, resembling a modern hockey stick but considerably longer and heavier. The change to a straight bat was made to defend against length bowling, which had evolved with cricketers in Hambledon, a small village in southern England. The bat was shortened in the handle and straightened and broadened in the blade, which led to forward play, driving, and cutting. As bowling technique was not very advanced during this period, batting dominated bowling through the 18th century.The earliest reference to an 11-a-side match, played in Sussex for a stake of 50 guineas, dates from 1697. In 1709 Kent met Surrey in the first recorded intercounty match at Dartford, and it is probable that about this time a code of laws (rules) existed for the conduct of the game, although the earliest known version of such rules is dated 1744. Sources suggest that cricket was limited to the southern counties of England during the early 18th century, but its popularity grew and eventually spread to London, notably to the Artillery Ground, Finsbury, which saw a famous match between Kent and All-England in 1744. Heavy betting and disorderly crowds were common at matches.></p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <img src="Images/babar.jpg" alt="" width="100%" height="550px" class="main-img">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="background-color: black; color: whitesmoke;">
+          <h1 class="h1">Top Players</h1>
+          <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="container-card">
+                <div class="cardd" style="color: #009688;">
+                    <div class="imgBox">
+                        <img src="Images/babar azam1.jpg" alt="">
+                    </div>
+                    <div class="contentt">
+                        <h2>Babar Azam</h2>
+                        <p>
+                          <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">From:</span>, Walled City of Lahore</h6>
+                          <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;"> Born in:</span> October 15, 1994 (age 29 years)</h6>
+                          <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Height:</span> 1.8 m</h6>
+                          <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Weight:</span>67 Kg</h6>
+                          <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Followers:</span>4.8 M+</h6>
+                         </p>
+                    </div>
+                </div>
+               </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="container-card">
+                  <div class="cardd" style="color: #009688;">
+                      <div class="imgBox">
+                          <img src="Images/virat.jpg" alt="">
+                      </div>
+                      <div class="contentt">
+                          <h2>Virat Kohli</h2>
+                          <p>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">From:</span> Delhi, India</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;"> Born in:</span>  November 5, 1988 (age 35 years) </h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Height:</span>  1.75 m</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Weight:</span>69 kg</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Followers:</span> 250 M+</h6>
+                           </p>
+                      </div>
+                  </div>
+                 </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="container-card">
+                  <div class="cardd" style="color: #009688;">
+                      <div class="imgBox">
+                          <img src="Images/afridi.jpg" alt="">
+                      </div>
+                      <div class="contentt">
+                          <h2>Shahid Afridi</h2>
+                          <p>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">From:</span>Khyber District, Pakistan</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;"> Born in:</span>  March 1, 1977 (age 46 years) </h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Height:</span> 1.82 m</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Weight:</span>76 kg</h6>
+                            <h6> <span style="color: rgb(255, 0, 0); font-size: x-large;">Followers:</span> 4.5 M+</h6>
+                           </p>
+                      </div>
+                  </div>
+                 </div>
+              </div>
+          </div>
+      </div>
+        <div class="container-fluid" style="color: whitesmoke; background-color: black;">
+        <h3 style="text-align: center;">Cricket Rules</h3>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+                <p class="p">Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. Two players from the batting team (the striker and nonstriker) stand in front of either wicket, with one player from the fielding team (the bowler) bowling the ball towards the striker's wicket from the opposite end of the pitch. The striker's goal is to hit the bowled ball and then switch places with the nonstriker, with the batting team scoring one run for each exchange. Runs are also scored when the ball reaches or crosses the boundary of the field or when the ball is bowled illegally.The fielding team tries to prevent runs from being scored by dismissing batters (so they are "out"). Means of dismissal include being bowled, when the ball hits the striker's wicket and dislodges the bails, and by the fielding side either catching the ball after it is hit by the bat, but before it hits the ground, or hitting a wicket with the ball before a batter can cross the crease in front of the wicket. When ten batters have been dismissed, the innings ends and the teams swap roles. The game is adjudicated by two umpires, aided by a third umpire and match referee in international matches. They communicate with two off-field scorers who record the match's statistical information.Forms of cricket range from Twenty20 (also known as T20), with each team batting for a single innings of 20 overs (each "over" being a set of 6 fair opportunities for the batting team to score) and the game generally lasting three to four hours, to Test matches played over five days. Traditionally cricketers play in all-white kit, but in limited overs cricket they wear club or team colours. In addition to the basic kit, some players wear protective gear to prevent injury caused by the ball, which is a hard, solid spheroid made of compressed leather with a slightly raised sewn seam enclosing a cork core layered with tightly wound string.The earliest known definite reference to cricket is to it being played in South East England in the mid-16th century. It spread globally with the expansion of the British Empire, with the first international matches in the second half of the 19th century. The game's governing body is the International Cricket Council (ICC), which has over 100 members, twelve of which are full members who play Test matches. The game's rules, the Laws of Cricket, are maintained by Marylebone Cricket Club (MCC) in London. The sport is followed primarily in South Asia, Australia, New Zealand, the United Kingdom, Southern Africa and the West Indies.[1]Women's cricket, which is organised and played separately, has also achieved international standard.The most successful side playing international cricket is Australia, which has won eight One Day International trophies, including six World Cups, more than any other country and has been the top-rated Test side more than any other country.</p>
+            </div>
+        </div>
+        </div>
+         <!-- Footer Start  -->
+   <div class="container-fluid" style="background-color: whitesmoke;color: black;">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+      <h1 class="fw-bold" style="text-align: center;">Our Partners</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Adidas.png" alt="">ADIDAS</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Nike.png" alt="">NIKE</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Puma.png" alt="" style="height: 70px; width: 70px;">PUMA</h1>
+      </div>
+      <div class="col-sm-12 col.md-4 col-lg-4 col-xl-3">
+        <h1 class="fw-bold" ><img src="Images/Reebok.png" alt="" style="height: 70px; width: 100px;" >REEBOK</h1>
+      </div>
+    </div>
+   </div>
+    <div class="container-fluid ">
+      <footer
+      class="text-center text-lg-start text-whitesmoke"
+      >
+      <section
+      class="d-flex justify-content-between p-4" style="border-top:gray solid ; border-bottom:gray solid ;"
+      >
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-facebook-f "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-twitter "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-google "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-instagram "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-linkedin "> </i>
+        </a>
+        <a href="" class="text-white m-4">
+        <i class="fa-brands fa-github "> </i>
+        </a>
+      </div>
+      </section>
+      <section class="">
+    <div class="container-fluid text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <h6><img src="Images/Logo.png" id="Logo" ><span class="Ryan ">Ryan </span><span class="Club">Sport Club</span></h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;" />
+              <p>Ryan Sport Club, an effort has been made to provide a world class facilities and infrastructure for the promotion of sports and health</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Facilities</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;" />
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Free World Trip</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Yearly Events</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Wining Party</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">MeetUp With Sport Stars</a>
+          </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Useful links</h6>
+        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;">
+        <p>
+          <a href="#!" class="text-white" style="text-decoration: none;">khizerayaz9@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">Irfanrahim679@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">mustafatariq610@gmail.com</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white"style="text-decoration: none;">kamran125ahmed@gmail.com</a>
+        </p>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+      <h6 class="text-uppercase fw-bold">Contact</h6>
+      <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px;">
+      <p><i class="fa-solid fa-house mr-3" ></i>Karachi, Pakistan</p>
+      <p><i class="fa-solid fa-envelope text-white mr-3"></i>Ryansportclub@gmail.com</p>
+      <p><i class="fa-solid fa-phone text-white mr-3"></i>+92 0316 1261628</p>
+      <p><i class="fa-solid fa-print text-white mr-3"></i>+92 0316 1286007</p>
+  </div>
+      </div>
+    </div>
+      </section>
+      <div class="text-center p3" style="border-top: gray solid;">
+        <img src="Images/Logo.png" id="Logo" ><span class="Ryan">Ryan</span><Span class="Club">Sport Club</Span>    
+        All &COPY; Copy Rights are Reserved 2024:
+      </div>
+    <!-- Footer End  -->
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
